@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoExchange - Leading Cryptocurrency Trading Platform</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FFC107'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='%231a1a2e'%3EB%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FFC107'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='%231a1a2e'%3EB%3C/text%3E%3C/svg%3E">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-currency-bitcoin text-warning"></i> CryptoExchange
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active px-3" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="market.html">Market</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-3"><a class="btn btn-outline-light" href="login.html">Login</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-warning" href="register.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center justify-content-center min-vh-100">
+                <div class="col-lg-10 col-xl-8 text-center">
+                    <h1 class="display-3 fw-bold text-white mb-4">Trade Crypto with Confidence</h1>
+                    <p class="lead text-white-50 mb-4">The most secure and user-friendly cryptocurrency exchange platform. Buy, sell, and trade Bitcoin, Ethereum, and 200+ altcoins with low fees.</p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center">
+                        <a href="wallet.html" class="btn btn-warning btn-lg">Start Trading</a>
+                        <a href="about.html" class="btn btn-outline-light btn-lg">Learn More</a>
+                    </div>
+                    <div class="hero-image text-center mt-5">
+                        <div class="crypto-animation">
+                            <i class="bi bi-currency-bitcoin"></i>
+                            <i class="bi bi-currency-ethereum"></i>
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Crypto Prices -->
+    <section class="live-prices py-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center text-white mb-5">Live Crypto Prices</h2>
+            <div class="row g-4" id="cryptoPrices">
+                <!-- Prices will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features -->
+    <section class="features py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Core Features</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                        </div>
+                        <h4>Fast Transactions</h4>
+                        <p>Lightning-fast trade execution with minimal latency for optimal trading experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="bi bi-shield-lock-fill"></i>
+                        </div>
+                        <h4>Secure Wallet</h4>
+                        <p>Multi-signature wallets with cold storage and insurance protection for your assets.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="bi bi-percent"></i>
+                        </div>
+                        <h4>Low Fees</h4>
+                        <p>Competitive trading fees starting from 0.1% with volume-based discounts available.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <h4>24/7 Support</h4>
+                        <p>Round-the-clock customer support via live chat, email, and phone assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose Us</h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="mb-4">
+                        <h4><i class="bi bi-shield-check text-success"></i> Security</h4>
+                        <p>Bank-level security with 2FA, encryption, and regular security audits. Your funds are protected with industry-leading security measures.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4><i class="bi bi-eye text-primary"></i> Transparency</h4>
+                        <p>Full transparency in all operations. Real-time audit reports and proof of reserves available for public verification.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4><i class="bi bi-diagram-3 text-warning"></i> Blockchain-Based</h4>
+                        <p>Built on decentralized blockchain technology ensuring immutability, transparency, and trust in every transaction.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://media.istockphoto.com/id/649159888/photo/everything-is-possible-businessman-holding-in-hand-new-technologies.jpg?s=612x612&w=0&k=20&c=t_LBiLCvz84_ReEidGOMXfzodMyzkQUiZPJBbu7oUac=" alt="Blockchain Security" class="img-fluid rounded" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="use-cases py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Use Cases</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="use-case-card p-4 text-center">
+                        <i class="bi bi-arrow-left-right display-4 text-primary mb-3"></i>
+                        <h4>Trading</h4>
+                        <p>Spot trading, futures, and margin trading with advanced charting tools and indicators.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="use-case-card p-4 text-center">
+                        <i class="bi bi-graph-up display-4 text-success mb-3"></i>
+                        <h4>Investing</h4>
+                        <p>Long-term investment opportunities with portfolio tracking and automated DCA strategies.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="use-case-card p-4 text-center">
+                        <i class="bi bi-stack display-4 text-warning mb-3"></i>
+                        <h4>Staking</h4>
+                        <p>Earn passive income through staking with competitive APY rates on multiple cryptocurrencies.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="use-case-card p-4 text-center">
+                        <i class="bi bi-image display-4 text-danger mb-3"></i>
+                        <h4>NFT Marketplace</h4>
+                        <p>Buy, sell, and trade NFTs with low gas fees and support for multiple blockchain networks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partners py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Partners & Integrations</h2>
+            <div class="row g-4 align-items-center justify-content-center">
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="partner-logo p-3">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23F3BA2F'/%3E%3Ctext x='100' y='130' font-size='120' font-weight='bold' text-anchor='middle' fill='%23000'%3EB%3C/text%3E%3C/svg%3E" alt="Binance" class="partner-img">
+                        <p class="mt-2 fw-bold">Binance</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="partner-logo p-3">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='90' fill='%230052FF'/%3E%3Cpath d='M100 40 L130 100 L100 100 L70 100 Z' fill='white'/%3E%3C/svg%3E" alt="Coinbase" class="partner-img">
+                        <p class="mt-2 fw-bold">Coinbase</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="partner-logo p-3">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%2317181B'/%3E%3Cpath d='M50 150 L80 80 L110 120 L140 60 L170 150' stroke='%23FF6B35' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='100' cy='100' r='5' fill='%23FF6B35'/%3E%3C/svg%3E" alt="CoinMarketCap" class="partner-img">
+                        <p class="mt-2 fw-bold">CoinMarketCap</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="partner-logo p-3">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='20' fill='%23F6851B'/%3E%3Cpath d='M100 50 L120 90 L100 110 L80 90 Z' fill='white'/%3E%3Crect x='70' y='120' width='60' height='30' rx='5' fill='white'/%3E%3C/svg%3E" alt="MetaMask" class="partner-img">
+                        <p class="mt-2 fw-bold">MetaMask</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center">
+                    <div class="partner-logo p-3">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='90' fill='%23375BD2'/%3E%3Cpath d='M60 100 L90 70 L110 90 L140 60' stroke='white' stroke-width='12' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='100' cy='100' r='8' fill='white'/%3E%3C/svg%3E" alt="Chainlink" class="partner-img">
+                        <p class="mt-2 fw-bold">Chainlink</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Users Say</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card p-4">
+                        <div class="stars mb-3">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="mb-3">"Best crypto exchange I've used! Fast transactions and excellent customer support. Highly recommended!"</p>
+                        <div class="d-flex align-items-center">
+                            <div class="avatar me-3">
+                                <i class="bi bi-person-circle display-6"></i>
+                            </div>
+                            <div>
+                                <strong>John Doe</strong>
+                                <p class="text-muted mb-0">Trader</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card p-4">
+                        <div class="stars mb-3">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="mb-3">"The security features give me peace of mind. The platform is intuitive and the fees are very competitive."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="avatar me-3">
+                                <i class="bi bi-person-circle display-6"></i>
+                            </div>
+                            <div>
+                                <strong>Sarah Smith</strong>
+                                <p class="text-muted mb-0">Investor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card p-4">
+                        <div class="stars mb-3">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="mb-3">"Amazing staking rewards and NFT marketplace with low gas fees. This platform has everything I need in one place!"</p>
+                        <div class="d-flex align-items-center">
+                            <div class="avatar me-3">
+                                <i class="bi bi-person-circle display-6"></i>
+                            </div>
+                            <div>
+                                <strong>Mike Johnson</strong>
+                                <p class="text-muted mb-0">Crypto Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-3">Stay Updated with Crypto News</h2>
+                    <p class="mb-4">Subscribe to our newsletter and get the latest updates on cryptocurrency trends, trading tips, and platform features.</p>
+                    <form class="newsletter-form d-flex gap-2 justify-content-center flex-wrap">
+                        <input type="email" class="form-control form-control-lg" placeholder="Enter your email" style="max-width: 400px;">
+                        <button type="submit" class="btn btn-warning btn-lg">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5><i class="bi bi-currency-bitcoin text-warning"></i> CryptoExchange</h5>
+                    <p class="text-white-50">The most secure and user-friendly cryptocurrency exchange platform.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-telegram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-discord"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li><a href="services.html" class="text-white-50">Services</a></li>
+                        <li><a href="blog.html" class="text-white-50">Blog</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="text-white-50">Trading</a></li>
+                        <li><a href="services.html" class="text-white-50">Wallet</a></li>
+                        <li><a href="services.html" class="text-white-50">Staking</a></li>
+                        <li><a href="services.html" class="text-white-50">NFT Marketplace</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html" class="text-white-50">Help Center</a></li>
+                        <li><a href="contact.html" class="text-white-50">API Docs</a></li>
+                        <li><a href="token.html" class="text-white-50">Whitepaper</a></li>
+                        <li><a href="contact.html" class="text-white-50">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white-50">
+            <div class="text-center text-white-50">
+                <p>&copy; 2025 CryptoExchange. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+

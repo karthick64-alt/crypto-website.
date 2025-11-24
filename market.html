@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Market - CryptoExchange</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FFC107'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='%231a1a2e'%3EB%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FFC107'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='%231a1a2e'%3EB%3C/text%3E%3C/svg%3E">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-currency-bitcoin text-warning"></i> CryptoExchange
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active px-3" href="market.html">Market</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-3"><a class="btn btn-outline-light" href="login.html">Login</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-warning" href="register.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-3">Live Crypto Market</h1>
+                    <p class="lead">Real-time cryptocurrency prices, charts, and market data</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Stats -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="market-stat-card">
+                        <h6 class="text-muted mb-2">Market Cap</h6>
+                        <h3 class="fw-bold mb-2">$2.1T</h3>
+                        <span class="stat-change positive">+2.5%</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="market-stat-card">
+                        <h6 class="text-muted mb-2">24h Volume</h6>
+                        <h3 class="fw-bold mb-2">$85.2B</h3>
+                        <span class="stat-change positive">+5.1%</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="market-stat-card">
+                        <h6 class="text-muted mb-2">BTC Dominance</h6>
+                        <h3 class="fw-bold mb-2">52.3%</h3>
+                        <span class="stat-change negative">-0.8%</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="market-stat-card">
+                        <h6 class="text-muted mb-2">Active Markets</h6>
+                        <h3 class="fw-bold mb-2">12,456</h3>
+                        <span class="stat-change positive">+23</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charts Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h4 class="mb-0">Bitcoin (BTC) Price Chart</h4>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-sm btn-outline-primary active">1D</button>
+                                <button type="button" class="btn btn-sm btn-outline-primary">7D</button>
+                                <button type="button" class="btn btn-sm btn-outline-primary">1M</button>
+                                <button type="button" class="btn btn-sm btn-outline-primary">1Y</button>
+                            </div>
+                        </div>
+                        <!-- Price Info -->
+                        <div class="d-flex justify-content-between align-items-center mb-3 p-3 bg-light rounded">
+                            <div>
+                                <h3 class="mb-1 fw-bold">$43,250.50</h3>
+                                <span class="text-success"><i class="bi bi-arrow-up"></i> +2.45% ($1,035.50)</span>
+                            </div>
+                            <div class="text-end">
+                                <small class="text-muted d-block">24h High</small>
+                                <strong>$43,890.00</strong>
+                            </div>
+                            <div class="text-end">
+                                <small class="text-muted d-block">24h Low</small>
+                                <strong>$42,100.00</strong>
+                            </div>
+                            <div class="text-end">
+                                <small class="text-muted d-block">24h Volume</small>
+                                <strong>$28.5B</strong>
+                            </div>
+                        </div>
+                        
+                        <!-- Chart Visualization -->
+                        <div class="chart-placeholder position-relative" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); min-height: 400px; padding: 20px;">
+                            <div class="position-absolute top-0 end-0 m-3" style="z-index: 10;">
+                                <span class="badge bg-primary"><i class="bi bi-graph-up"></i> Live</span>
+                            </div>
+                            
+                            <!-- SVG Chart - Always Visible -->
+                            <svg viewBox="0 0 1100 350" style="width: 100%; height: 350px; display: block; background: white; border-radius: 8px; border: 1px solid #dee2e6;">
+                                <!-- Background -->
+                                <rect width="1100" height="350" fill="#ffffff" rx="8"/>
+                                
+                                <!-- Grid Lines -->
+                                <line x1="50" y1="50" x2="50" y2="320" stroke="#e9ecef" stroke-width="1"/>
+                                <line x1="50" y1="320" x2="1050" y2="320" stroke="#e9ecef" stroke-width="1"/>
+                                <line x1="275" y1="50" x2="275" y2="320" stroke="#f1f3f5" stroke-width="1" stroke-dasharray="2,2"/>
+                                <line x1="550" y1="50" x2="550" y2="320" stroke="#f1f3f5" stroke-width="1" stroke-dasharray="2,2"/>
+                                <line x1="825" y1="50" x2="825" y2="320" stroke="#f1f3f5" stroke-width="1" stroke-dasharray="2,2"/>
+                                <line x1="50" y1="235" x2="1050" y2="235" stroke="#f1f3f5" stroke-width="1" stroke-dasharray="2,2"/>
+                                <line x1="50" y1="150" x2="1050" y2="150" stroke="#f1f3f5" stroke-width="1" stroke-dasharray="2,2"/>
+                                
+                                <!-- Gradient Fill Area -->
+                                <defs>
+                                    <linearGradient id="chartFill" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#0d6efd;stop-opacity:0.25" />
+                                        <stop offset="100%" style="stop-color:#0d6efd;stop-opacity:0.05" />
+                                    </linearGradient>
+                                </defs>
+                                <polygon points="50,300 50,320 1050,320 1050,145 1000,148 950,150 900,152 850,155 800,158 750,160 700,165 650,170 600,175 550,180 500,185 450,190 400,200 350,215 300,210 250,220 200,230 150,250 100,280" fill="url(#chartFill)"/>
+                                
+                                <!-- Price Line -->
+                                <polyline 
+                                    points="50,300 100,280 150,250 200,230 250,220 300,210 350,215 400,200 450,190 500,185 550,180 600,175 650,170 700,165 750,160 800,158 850,155 900,152 950,150 1000,148 1050,145" 
+                                    fill="none" 
+                                    stroke="#0d6efd" 
+                                    stroke-width="3" 
+                                    stroke-linecap="round" 
+                                    stroke-linejoin="round"/>
+                                
+                                <!-- Data Points -->
+                                <circle cx="50" cy="300" r="5" fill="#0d6efd" stroke="white" stroke-width="2"/>
+                                <circle cx="550" cy="180" r="6" fill="#0d6efd" stroke="white" stroke-width="2"/>
+                                <circle cx="1050" cy="145" r="5" fill="#0d6efd" stroke="white" stroke-width="2"/>
+                                
+                                <!-- X-Axis Labels (Time) -->
+                                <text x="50" y="340" font-family="Arial, sans-serif" font-size="14" fill="#6c757d" text-anchor="middle" font-weight="500">00:00</text>
+                                <text x="275" y="340" font-family="Arial, sans-serif" font-size="14" fill="#6c757d" text-anchor="middle" font-weight="500">06:00</text>
+                                <text x="550" y="340" font-family="Arial, sans-serif" font-size="14" fill="#6c757d" text-anchor="middle" font-weight="500">12:00</text>
+                                <text x="825" y="340" font-family="Arial, sans-serif" font-size="14" fill="#6c757d" text-anchor="middle" font-weight="500">18:00</text>
+                                <text x="1050" y="340" font-family="Arial, sans-serif" font-size="14" fill="#6c757d" text-anchor="middle" font-weight="500">24:00</text>
+                                
+                                <!-- Y-Axis Labels (Price) -->
+                                <text x="40" y="145" font-family="Arial, sans-serif" font-size="12" fill="#6c757d" text-anchor="end" font-weight="500">$44,000</text>
+                                <text x="40" y="235" font-family="Arial, sans-serif" font-size="12" fill="#6c757d" text-anchor="end" font-weight="500">$43,000</text>
+                                <text x="40" y="300" font-family="Arial, sans-serif" font-size="12" fill="#6c757d" text-anchor="end" font-weight="500">$42,500</text>
+                                <text x="40" y="320" font-family="Arial, sans-serif" font-size="12" fill="#6c757d" text-anchor="end" font-weight="500">$42,000</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div>
+                        <h5 class="mb-4">Top Gainers</h5>
+                        <div id="topGainers">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Table -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="mb-3">All Cryptocurrencies</h2>
+                <div class="d-flex justify-content-center">
+                    <div class="input-group" style="max-width: 300px;">
+                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search..." id="searchCrypto">
+                    </div>
+                </div>
+            </div>
+            <div class="market-table">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0 align-middle">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>24h Change</th>
+                                <th>24h Volume</th>
+                                <th>Market Cap</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="marketTableBody">
+                            <!-- Will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Losers -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div>
+                        <h5 class="mb-4">Top Losers (24h)</h5>
+                        <div id="topLosers">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <h5 class="mb-4">Most Traded</h5>
+                        <div id="mostTraded">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5><i class="bi bi-currency-bitcoin text-warning"></i> CryptoExchange</h5>
+                    <p class="text-white-50">The most secure and user-friendly cryptocurrency exchange platform.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-telegram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-discord"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li><a href="services.html" class="text-white-50">Services</a></li>
+                        <li><a href="blog.html" class="text-white-50">Blog</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="text-white-50">Trading</a></li>
+                        <li><a href="services.html" class="text-white-50">Wallet</a></li>
+                        <li><a href="services.html" class="text-white-50">Staking</a></li>
+                        <li><a href="services.html" class="text-white-50">NFT Marketplace</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html" class="text-white-50">Help Center</a></li>
+                        <li><a href="contact.html" class="text-white-50">API Docs</a></li>
+                        <li><a href="token.html" class="text-white-50">Whitepaper</a></li>
+                        <li><a href="contact.html" class="text-white-50">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white-50">
+            <div class="text-center text-white-50">
+                <p>&copy; 2025 CryptoExchange. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Extended crypto data for market page
+        const marketData = [
+            { rank: 1, symbol: 'BTC', name: 'Bitcoin', price: 43250.50, change: 2.45, volume: 28500000000, marketCap: 850000000000 },
+            { rank: 2, symbol: 'ETH', name: 'Ethereum', price: 2650.75, change: 1.89, volume: 15200000000, marketCap: 320000000000 },
+            { rank: 3, symbol: 'BNB', name: 'Binance Coin', price: 315.20, change: -0.65, volume: 1200000000, marketCap: 48000000000 },
+            { rank: 4, symbol: 'SOL', name: 'Solana', price: 98.45, change: 3.21, volume: 850000000, marketCap: 45000000000 },
+            { rank: 5, symbol: 'ADA', name: 'Cardano', price: 0.52, change: 1.25, volume: 420000000, marketCap: 18500000000 },
+            { rank: 6, symbol: 'XRP', name: 'Ripple', price: 0.62, change: -1.15, volume: 980000000, marketCap: 34000000000 },
+            { rank: 7, symbol: 'DOT', name: 'Polkadot', price: 7.85, change: 2.10, volume: 320000000, marketCap: 10500000000 },
+            { rank: 8, symbol: 'DOGE', name: 'Dogecoin', price: 0.085, change: 0.95, volume: 650000000, marketCap: 12200000000 }
+        ];
+
+        // Crypto images mapping - Using Picsum Photos with unique seeds for each crypto
+        const cryptoImages = {
+            'BTC': 'https://picsum.photos/100/100?random=100',
+            'ETH': 'https://picsum.photos/100/100?random=101',
+            'BNB': 'https://picsum.photos/100/100?random=102',
+            'SOL': 'https://picsum.photos/100/100?random=103',
+            'ADA': 'https://picsum.photos/100/100?random=104',
+            'XRP': 'https://picsum.photos/100/100?random=105',
+            'DOT': 'https://picsum.photos/100/100?random=106',
+            'DOGE': 'https://picsum.photos/100/100?random=107'
+        };
+        
+        // SVG fallback images for each crypto
+        const cryptoSVG = {
+            'BTC': 'data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%23F7931A\'/%3E%3Ctext x=\'50\' y=\'65\' font-family=\'Arial\' font-size=\'40\' font-weight=\'bold\' text-anchor=\'middle\' fill=\'white\'%3EB%3C/text%3E%3C/svg%3E',
+            'ETH': 'data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%23627EEA\'/%3E%3Ctext x=\'50\' y=\'65\' font-family=\'Arial\' font-size=\'35\' font-weight=\'bold\' text-anchor=\'middle\' fill=\'white\'%3EE%3C/text%3E%3C/svg%3E',
+            'BNB': 'data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%23F3BA2F\'/%3E%3Ctext x=\'50\' y=\'65\' font-family=\'Arial\' font-size=\'35\' font-weight=\'bold\' text-anchor=\'middle\' fill=\'black\'%3EBNB%3C/text%3E%3C/svg%3E',
+            'SOL': 'data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%23000\'/%3E%3Ctext x=\'50\' y=\'65\' font-family=\'Arial\' font-size=\'30\' font-weight=\'bold\' text-anchor=\'middle\' fill=\'%23946BD6\'%3ESOL%3C/text%3E%3C/svg%3E',
+            'ADA': 'data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%230030DD\'/%3E%3Ctext x=\'50\' y=\'65\' font-family=\'Arial\' font-size=\'30\' font-weight=\'bold\' text-anchor=\'middle\' fill=\'white\'%3EADA%3C/text%3E%3C/svg%3E',
+            'XRP': 'data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%23232527\'/%3E%3Ctext x=\'50\' y=\'65\' font-family=\'Arial\' font-size=\'30\' font-weight=\'bold\' text-anchor=\'middle\' fill=\'white\'%3EXRP%3C/text%3E%3C/svg%3E',
+            'DOT': 'data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%23E6007A\'/%3E%3Ctext x=\'50\' y=\'65\' font-family=\'Arial\' font-size=\'30\' font-weight=\'bold\' text-anchor=\'middle\' fill=\'white\'%3EDOT%3C/text%3E%3C/svg%3E',
+            'DOGE': 'data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%23C2A633\'/%3E%3Ctext x=\'50\' y=\'65\' font-family=\'Arial\' font-size=\'25\' font-weight=\'bold\' text-anchor=\'middle\' fill=\'white\'%3EDOGE%3C/text%3E%3C/svg%3E'
+        };
+
+        function populateMarketTable() {
+            const tbody = document.getElementById('marketTableBody');
+            tbody.innerHTML = '';
+            
+            marketData.forEach(crypto => {
+                const row = document.createElement('tr');
+                const cryptoImage = cryptoImages[crypto.symbol] || cryptoSVG[crypto.symbol] || cryptoSVG['BTC'];
+                const fallbackImage = cryptoSVG[crypto.symbol] || cryptoSVG['BTC'];
+                
+                row.innerHTML = `
+                    <td class="text-muted">${crypto.rank}</td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="${cryptoImage}" alt="${crypto.name}" class="crypto-logo me-2" style="width: 32px; height: 32px; border-radius: 50%; object-fit: cover;" onerror="this.src='${fallbackImage}'">
+                            <div>
+                                <strong class="d-block">${crypto.symbol}</strong>
+                                <small class="text-muted">${crypto.name}</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td><strong>$${crypto.price.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong></td>
+                    <td>
+                        <span class="badge ${crypto.change >= 0 ? 'bg-success' : 'bg-danger'}">
+                            ${crypto.change >= 0 ? '+' : ''}${crypto.change.toFixed(2)}%
+                        </span>
+                    </td>
+                    <td>$${(crypto.volume / 1000000000).toFixed(2)}B</td>
+                    <td>$${(crypto.marketCap / 1000000000).toFixed(2)}B</td>
+                    <td><a href="wallet.html" class="btn btn-sm btn-primary">Trade</a></td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function populateTopGainers() {
+            const container = document.getElementById('topGainers');
+            const gainers = [...marketData].sort((a, b) => b.change - a.change).slice(0, 5);
+            
+            container.innerHTML = '';
+            gainers.forEach(crypto => {
+                const cryptoImage = cryptoImages[crypto.symbol] || cryptoSVG[crypto.symbol] || cryptoSVG['BTC'];
+                const fallbackImage = cryptoSVG[crypto.symbol] || cryptoSVG['BTC'];
+                const item = document.createElement('div');
+                item.className = 'd-flex justify-content-between align-items-center mb-3 p-3 border rounded';
+                item.innerHTML = `
+                    <div class="d-flex align-items-center">
+                        <img src="${cryptoImage}" alt="${crypto.name}" class="crypto-logo me-2" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;" onerror="this.src='${fallbackImage}'">
+                        <div>
+                            <strong class="d-block">${crypto.symbol}</strong>
+                            <small class="text-muted">${crypto.name}</small>
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <strong class="d-block">$${crypto.price.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                        <small class="text-success">+${crypto.change.toFixed(2)}%</small>
+                    </div>
+                `;
+                container.appendChild(item);
+            });
+        }
+
+        function populateTopLosers() {
+            const container = document.getElementById('topLosers');
+            const losers = [...marketData].sort((a, b) => a.change - b.change).slice(0, 5);
+            
+            container.innerHTML = '';
+            losers.forEach(crypto => {
+                const cryptoImage = cryptoImages[crypto.symbol] || cryptoSVG[crypto.symbol] || cryptoSVG['BTC'];
+                const fallbackImage = cryptoSVG[crypto.symbol] || cryptoSVG['BTC'];
+                const item = document.createElement('div');
+                item.className = 'd-flex justify-content-between align-items-center mb-3 p-3 border rounded';
+                item.innerHTML = `
+                    <div class="d-flex align-items-center">
+                        <img src="${cryptoImage}" alt="${crypto.name}" class="crypto-logo me-2" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;" onerror="this.src='${fallbackImage}'">
+                        <div>
+                            <strong class="d-block">${crypto.symbol}</strong>
+                            <small class="text-muted">${crypto.name}</small>
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <strong class="d-block">$${crypto.price.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong>
+                        <small class="text-danger">${crypto.change.toFixed(2)}%</small>
+                    </div>
+                `;
+                container.appendChild(item);
+            });
+        }
+
+        function populateMostTraded() {
+            const container = document.getElementById('mostTraded');
+            const traded = [...marketData].sort((a, b) => b.volume - a.volume).slice(0, 5);
+            
+            container.innerHTML = '';
+            traded.forEach(crypto => {
+                const cryptoImage = cryptoImages[crypto.symbol] || cryptoSVG[crypto.symbol] || cryptoSVG['BTC'];
+                const fallbackImage = cryptoSVG[crypto.symbol] || cryptoSVG['BTC'];
+                const item = document.createElement('div');
+                item.className = 'd-flex justify-content-between align-items-center mb-3 p-3 border rounded';
+                item.innerHTML = `
+                    <div class="d-flex align-items-center">
+                        <img src="${cryptoImage}" alt="${crypto.name}" class="crypto-logo me-2" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;" onerror="this.src='${fallbackImage}'">
+                        <div>
+                            <strong class="d-block">${crypto.symbol}</strong>
+                            <small class="text-muted">${crypto.name}</small>
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <strong class="d-block">$${(crypto.volume / 1000000000).toFixed(2)}B</strong>
+                        <small class="text-muted">24h Volume</small>
+                    </div>
+                `;
+                container.appendChild(item);
+            });
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            populateMarketTable();
+            populateTopGainers();
+            populateTopLosers();
+            populateMostTraded();
+            
+            // Search functionality
+            document.getElementById('searchCrypto').addEventListener('input', function(e) {
+                const searchTerm = e.target.value.toLowerCase();
+                const rows = document.querySelectorAll('#marketTableBody tr');
+                rows.forEach(row => {
+                    const text = row.textContent.toLowerCase();
+                    row.style.display = text.includes(searchTerm) ? '' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

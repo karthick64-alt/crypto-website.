@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - CryptoExchange</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FFC107'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='%231a1a2e'%3EB%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FFC107'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='%231a1a2e'%3EB%3C/text%3E%3C/svg%3E">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-currency-bitcoin text-warning"></i> CryptoExchange
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active px-3" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="market.html">Market</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-3"><a class="btn btn-outline-light" href="login.html">Login</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-warning" href="register.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-3">Crypto Blog</h1>
+                    <p class="lead">Stay updated with the latest cryptocurrency news, trading strategies, and Web3 insights</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filters -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search articles..." id="searchInput" onkeyup="searchBlogPosts(this.value)">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex flex-nowrap justify-content-center justify-content-md-end align-items-center blog-filter-buttons" style="gap: 0.5rem;">
+                        <button type="button" class="btn btn-outline-primary active" onclick="filterBlogPosts('all', this)">All</button>
+                        <button type="button" class="btn btn-outline-primary" onclick="filterBlogPosts('trading', this)">Trading</button>
+                        <button type="button" class="btn btn-outline-primary" onclick="filterBlogPosts('blockchain', this)">Blockchain</button>
+                        <button type="button" class="btn btn-outline-primary" onclick="filterBlogPosts('defi', this)">DeFi</button>
+                        <button type="button" class="btn btn-outline-primary" onclick="filterBlogPosts('nft', this)">NFT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Blog Post 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card" data-category="trading">
+                        <img src="https://picsum.photos/800/600?random=101" alt="Trading Strategies" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 800 600\'%3E%3Crect width=\'800\' height=\'600\' fill=\'%23f0f0f0\'/%3E%3Cpath d=\'M100 300 L200 250 L300 280 L400 200 L500 220 L600 180 L700 200\' stroke=\'%230d6efd\' stroke-width=\'4\' fill=\'none\'/%3E%3Ctext x=\'400\' y=\'320\' font-family=\'Arial\' font-size=\'28\' fill=\'%23666\' text-anchor=\'middle\'%3ETrading Strategies%3C/text%3E%3C/svg%3E'">
+                        <div class="blog-card-body">
+                            <span class="badge bg-primary mb-2">Trading</span>
+                            <h5><a href="blog-details.html?id=1" class="text-decoration-none">10 Essential Trading Strategies for Beginners</a></h5>
+                            <p class="text-muted">Learn the fundamental trading strategies that every crypto trader should know to maximize profits and minimize risks in 2025 and beyond and beyond.</p>
+                            <div class="blog-meta d-flex justify-content-between align-items-center">
+                                <span><i class="bi bi-person"></i> John Doe</span>
+                                <span><i class="bi bi-calendar"></i> Jan 15, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card" data-category="blockchain">
+                        <img src="https://picsum.photos/800/600?random=102" alt="Blockchain Technology" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 800 600\'%3E%3Crect width=\'800\' height=\'600\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'400\' y=\'320\' font-family=\'Arial\' font-size=\'28\' fill=\'%23666\' text-anchor=\'middle\'%3EBlockchain Technology%3C/text%3E%3C/svg%3E'">
+                        <div class="blog-card-body">
+                            <span class="badge bg-success mb-2">Blockchain</span>
+                            <h5><a href="blog-details.html?id=2" class="text-decoration-none">Understanding Blockchain Technology: A Complete Guide</a></h5>
+                            <p class="text-muted">Dive deep into blockchain technology, how it works, and why it's revolutionizing the financial industry.</p>
+                            <div class="blog-meta d-flex justify-content-between align-items-center">
+                                <span><i class="bi bi-person"></i> Sarah Smith</span>
+                                <span><i class="bi bi-calendar"></i> Jan 12, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card" data-category="defi">
+                        <img src="https://picsum.photos/800/600?random=103" alt="DeFi Guide" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 800 600\'%3E%3Crect width=\'800\' height=\'600\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'400\' y=\'320\' font-family=\'Arial\' font-size=\'28\' fill=\'%23666\' text-anchor=\'middle\'%3EDeFi Guide%3C/text%3E%3C/svg%3E'">
+                        <div class="blog-card-body">
+                            <span class="badge bg-warning mb-2">DeFi</span>
+                            <h5><a href="blog-details.html?id=3" class="text-decoration-none">DeFi Explained: The Future of Finance in 2024</a></h5>
+                            <p class="text-muted">Explore decentralized finance and how it's transforming traditional banking.</p>
+                            <div class="blog-meta d-flex justify-content-between align-items-center">
+                                <span><i class="bi bi-person"></i> Mike Johnson</span>
+                                <span><i class="bi bi-calendar"></i> Jan 10, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card" data-category="nft">
+                        <img src="https://picsum.photos/800/600?random=104" alt="NFT Marketplace" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 800 600\'%3E%3Crect width=\'800\' height=\'600\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'400\' y=\'320\' font-family=\'Arial\' font-size=\'28\' fill=\'%23666\' text-anchor=\'middle\'%3ENFT Marketplace%3C/text%3E%3C/svg%3E'">
+                        <div class="blog-card-body">
+                            <span class="badge bg-danger mb-2">NFT</span>
+                            <h5><a href="blog-details.html?id=4" class="text-decoration-none">NFT Marketplace Trends in 2024 and Beyond</a></h5>
+                            <p class="text-muted">Discover the latest trends in the NFT marketplace and what to expect in the coming year.</p>
+                            <div class="blog-meta d-flex justify-content-between align-items-center">
+                                <span><i class="bi bi-person"></i> Emily Davis</span>
+                                <span><i class="bi bi-calendar"></i> Jan 8, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card" data-category="trading">
+                        <img src="https://picsum.photos/800/600?random=105" alt="Altcoin Guide" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 800 600\'%3E%3Crect width=\'800\' height=\'600\' fill=\'%23f0f0f0\'/%3E%3Ccircle cx=\'200\' cy=\'200\' r=\'50\' fill=\'%23FFC107\'/%3E%3Ccircle cx=\'400\' cy=\'200\' r=\'50\' fill=\'%23627EEA\'/%3E%3Ccircle cx=\'600\' cy=\'200\' r=\'50\' fill=\'%23198554\'/%3E%3Ctext x=\'400\' y=\'320\' font-family=\'Arial\' font-size=\'28\' fill=\'%23666\' text-anchor=\'middle\'%3EAltcoin Guide%3C/text%3E%3C/svg%3E'">
+                        <div class="blog-card-body">
+                            <span class="badge bg-primary mb-2">Trading</span>
+                            <h5><a href="blog-details.html?id=5" class="text-decoration-none">Top Altcoins to Watch in 2024 and Beyond</a></h5>
+                            <p class="text-muted">A comprehensive guide to the most promising altcoins and investment opportunities this year.</p>
+                            <div class="blog-meta d-flex justify-content-between align-items-center">
+                                <span><i class="bi bi-person"></i> Alex Thompson</span>
+                                <span><i class="bi bi-calendar"></i> Jan 5, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card" data-category="blockchain">
+                        <img src="https://picsum.photos/800/600?random=106" alt="Web3 Updates" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 800 600\'%3E%3Crect width=\'800\' height=\'600\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'400\' y=\'320\' font-family=\'Arial\' font-size=\'28\' fill=\'%23666\' text-anchor=\'middle\'%3EWeb3 Updates%3C/text%3E%3C/svg%3E'">
+                        <div class="blog-card-body">
+                            <span class="badge bg-success mb-2">Blockchain</span>
+                            <h5><a href="blog-details.html?id=6" class="text-decoration-none">Web3 Updates: What's New in Decentralized</a></h5>
+                            <p class="text-muted">Stay updated with the latest developments in Web3 technology and decentralized applications.</p>
+                            <div class="blog-meta d-flex justify-content-between align-items-center">
+                                <span><i class="bi bi-person"></i> David Kim</span>
+                                <span><i class="bi bi-calendar"></i> Jan 3, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 7 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card" data-category="trading">
+                        <img src="https://picsum.photos/800/600?random=107" alt="How-To Tutorial" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 800 600\'%3E%3Crect width=\'800\' height=\'600\' fill=\'%23f0f0f0\'/%3E%3Cpath d=\'M200 150 L300 150 L350 200 L450 200 L500 250 L600 250\' stroke=\'%230d6efd\' stroke-width=\'4\' fill=\'none\'/%3E%3Ccircle cx=\'200\' cy=\'150\' r=\'8\' fill=\'%230d6efd\'/%3E%3Ccircle cx=\'600\' cy=\'250\' r=\'8\' fill=\'%230d6efd\'/%3E%3Ctext x=\'400\' y=\'320\' font-family=\'Arial\' font-size=\'28\' fill=\'%23666\' text-anchor=\'middle\'%3EHow-To Tutorial%3C/text%3E%3C/svg%3E'">
+                        <div class="blog-card-body">
+                            <span class="badge bg-primary mb-2">Trading</span>
+                            <h5><a href="blog-details.html?id=7" class="text-decoration-none">How to Start Trading Cryptocurrency: Step-by-Step Guide</a></h5>
+                            <p class="text-muted">A beginner-friendly tutorial on how to start your cryptocurrency trading journey from scratch in 2025 and beyond and beyond.</p>
+                            <div class="blog-meta d-flex justify-content-between align-items-center">
+                                <span><i class="bi bi-person"></i> Lisa Anderson</span>
+                                <span><i class="bi bi-calendar"></i> Jan 1, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 8 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card" data-category="defi">
+                        <img src="https://picsum.photos/800/600?random=108" alt="Yield Farming" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 800 600\'%3E%3Crect width=\'800\' height=\'600\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'400\' y=\'320\' font-family=\'Arial\' font-size=\'28\' fill=\'%23666\' text-anchor=\'middle\'%3EYield Farming%3C/text%3E%3C/svg%3E'">
+                        <div class="blog-card-body">
+                            <span class="badge bg-warning mb-2">DeFi</span>
+                            <h5><a href="blog-details.html?id=8" class="text-decoration-none">Yield Farming Strategies for Maximum Returns</a></h5>
+                            <p class="text-muted">Learn advanced yield farming strategies to maximize your returns in DeFi protocols in 2024 and beyond and beyond.</p>
+                            <div class="blog-meta d-flex justify-content-between align-items-center">
+                                <span><i class="bi bi-person"></i> Robert Williams</span>
+                                <span><i class="bi bi-calendar"></i> Dec 28, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 9 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-card" data-category="nft">
+                        <img src="https://picsum.photos/800/600?random=109" alt="Crypto News" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 800 600\'%3E%3Crect width=\'800\' height=\'600\' fill=\'%23f0f0f0\'/%3E%3Ctext x=\'400\' y=\'320\' font-family=\'Arial\' font-size=\'28\' fill=\'%23666\' text-anchor=\'middle\'%3ECrypto News%3C/text%3E%3C/svg%3E'">
+                        <div class="blog-card-body">
+                            <span class="badge bg-danger mb-2">NFT</span>
+                            <h5><a href="blog-details.html?id=9" class="text-decoration-none">Latest Crypto News: Market Analysis and Updates</a></h5>
+                            <p class="text-muted">Weekly roundup of the most important cryptocurrency news and market analysis in 2024 and beyond and beyond.</p>
+                            <div class="blog-meta d-flex justify-content-between align-items-center">
+                                <span><i class="bi bi-person"></i> Maria Garcia</span>
+                                <span><i class="bi bi-calendar"></i> Dec 25, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Page navigation" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5><i class="bi bi-currency-bitcoin text-warning"></i> CryptoExchange</h5>
+                    <p class="text-white-50">The most secure and user-friendly cryptocurrency exchange platform.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-telegram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-discord"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li><a href="services.html" class="text-white-50">Services</a></li>
+                        <li><a href="blog.html" class="text-white-50">Blog</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="text-white-50">Trading</a></li>
+                        <li><a href="services.html" class="text-white-50">Wallet</a></li>
+                        <li><a href="services.html" class="text-white-50">Staking</a></li>
+                        <li><a href="services.html" class="text-white-50">NFT Marketplace</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html" class="text-white-50">Help Center</a></li>
+                        <li><a href="contact.html" class="text-white-50">API Docs</a></li>
+                        <li><a href="token.html" class="text-white-50">Whitepaper</a></li>
+                        <li><a href="contact.html" class="text-white-50">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white-50">
+            <div class="text-center text-white-50">
+                <p>&copy; 2025 CryptoExchange. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoExchange - Leading Cryptocurrency Trading Platform</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FFC107'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='%231a1a2e'%3EB%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FFC107'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='%231a1a2e'%3EB%3C/text%3E%3C/svg%3E">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-currency-bitcoin text-warning"></i> CryptoExchange
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active px-3" href="index2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="market.html">Market</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-3"><a class="btn btn-outline-light" href="login.html">Login</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-warning" href="register.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Full-Screen Hero -->
+    <section class="hero-fullscreen">
+        <div class="globe-animation"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center justify-content-center min-vh-100">
+                <div class="col-lg-10 col-xl-8 text-center text-white">
+                    <h1 class="display-2 fw-bold mb-4">The Future of Decentralized Finance</h1>
+                    <p class="lead mb-4">Build, trade, and earn on the most advanced DeFi platform. Experience true financial freedom with blockchain technology.</p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="wallet.html" class="btn btn-warning btn-lg px-5">Launch DApp</a>
+                        <a href="token.html" class="btn btn-outline-light btn-lg px-5">View Whitepaper</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Token Utility Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Token Utility</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-4">
+                        <div class="feature-icon mb-3 mx-auto">
+                            <i class="bi bi-wallet2"></i>
+                        </div>
+                        <h4>Governance</h4>
+                        <p>Vote on platform proposals and shape the future of CryptoExchange</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-4">
+                        <div class="feature-icon mb-3 mx-auto">
+                            <i class="bi bi-percent"></i>
+                        </div>
+                        <h4>Fee Discounts</h4>
+                        <p>Enjoy reduced trading fees and premium features with token holdings</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-4">
+                        <div class="feature-icon mb-3 mx-auto">
+                            <i class="bi bi-stack"></i>
+                        </div>
+                        <h4>Staking Rewards</h4>
+                        <p>Earn passive income by staking tokens and supporting the network</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-4">
+                        <div class="feature-icon mb-3 mx-auto">
+                            <i class="bi bi-gift"></i>
+                        </div>
+                        <h4>Exclusive Access</h4>
+                        <p>Get early access to new features, airdrops, and exclusive events</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Timeline -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Development Roadmap</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="roadmap-timeline">
+                        <div class="roadmap-item">
+                            <h4>Q1 2024 - Foundation</h4>
+                            <p class="text-muted">Platform launch, core DeFi protocols, wallet integration, initial token distribution</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <h4>Q2 2024 - Expansion</h4>
+                            <p class="text-muted">Multi-chain support, advanced trading features, NFT marketplace integration, mobile app beta</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <h4>Q3 2024 - Innovation</h4>
+                            <p class="text-muted">AI-powered trading tools, yield farming optimization, cross-chain bridges, governance DAO launch</p>
+                        </div>
+                        <div class="roadmap-item">
+                            <h4>Q4 2024 - Scale</h4>
+                            <p class="text-muted">Global expansion, enterprise solutions, institutional partnerships, mainnet v2.0 release</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Whitepaper CTA -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-3">Ready to Dive Deeper?</h2>
+            <p class="lead mb-4">Download our comprehensive whitepaper to learn about our technology, tokenomics, and vision for the future of DeFi.</p>
+            <a href="token.html" class="btn btn-warning btn-lg px-5">Download Whitepaper</a>
+        </div>
+    </section>
+
+    <!-- Community Stats -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Join Our Community</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <i class="bi bi-telegram display-1 text-primary mb-3"></i>
+                        <h3 class="fw-bold">50K+</h3>
+                        <p class="text-muted">Telegram Members</p>
+                        <a href="#" class="btn btn-outline-primary">Join Telegram</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <i class="bi bi-twitter display-1 text-info mb-3"></i>
+                        <h3 class="fw-bold">120K+</h3>
+                        <p class="text-muted">Twitter Followers</p>
+                        <a href="#" class="btn btn-outline-info">Follow Us</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <i class="bi bi-discord display-1 text-indigo mb-3"></i>
+                        <h3 class="fw-bold">30K+</h3>
+                        <p class="text-muted">Discord Members</p>
+                        <a href="#" class="btn btn-outline-indigo">Join Discord</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NFT Features -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">NFT Marketplace Features</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <div class="feature-icon" style="width: 60px; height: 60px;">
+                                <i class="bi bi-image"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h4>Multi-Chain NFTs</h4>
+                            <p>Trade NFTs across Ethereum, Polygon, BSC, and Solana networks seamlessly</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <div class="feature-icon" style="width: 60px; height: 60px;">
+                                <i class="bi bi-currency-dollar"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h4>Low Gas Fees</h4>
+                            <p>Optimized smart contracts reduce gas costs by up to 90% compared to traditional platforms</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <div class="feature-icon" style="width: 60px; height: 60px;">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h4>Verified Collections</h4>
+                            <p>All collections are verified and audited for authenticity and security</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <div class="feature-icon" style="width: 60px; height: 60px;">
+                                <i class="bi bi-graph-up"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h4>Royalty System</h4>
+                            <p>Automatic royalty distribution to creators on every secondary sale</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Certifications -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Security & Certifications</h2>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <h4><i class="bi bi-shield-check text-success"></i> Audited Smart Contracts</h4>
+                    <p>All our smart contracts have been audited by leading security firms including CertiK, OpenZeppelin, and Trail of Bits.</p>
+                    
+                    <h4 class="mt-4"><i class="bi bi-lock text-primary"></i> Insurance Coverage</h4>
+                    <p>We provide comprehensive insurance coverage through Nexus Mutual and other leading DeFi insurance providers.</p>
+                    
+                    <h4 class="mt-4"><i class="bi bi-bug text-warning"></i> Bug Bounty Program</h4>
+                    <p>Active bug bounty program with rewards up to $100,000 for critical vulnerabilities discovered.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3 text-center">
+                        <div class="col-6">
+                            <div class="p-4 border rounded">
+                                <i class="bi bi-award display-4 text-warning"></i>
+                                <p class="mt-2 mb-0">CertiK Verified</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-4 border rounded">
+                                <i class="bi bi-shield-check display-4 text-success"></i>
+                                <p class="mt-2 mb-0">OpenZeppelin</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-4 border rounded">
+                                <i class="bi bi-check-circle display-4 text-primary"></i>
+                                <p class="mt-2 mb-0">ISO 27001</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-4 border rounded">
+                                <i class="bi bi-lock display-4 text-danger"></i>
+                                <p class="mt-2 mb-0">SOC 2 Type II</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5><i class="bi bi-currency-bitcoin text-warning"></i> CryptoExchange</h5>
+                    <p class="text-white-50">The most secure and user-friendly cryptocurrency exchange platform.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-telegram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-discord"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li><a href="services.html" class="text-white-50">Services</a></li>
+                        <li><a href="blog.html" class="text-white-50">Blog</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="token.html" class="text-white-50">Whitepaper</a></li>
+                        <li><a href="token.html" class="text-white-50">Tokenomics</a></li>
+                        <li><a href="contact.html" class="text-white-50">API Docs</a></li>
+                        <li><a href="contact.html" class="text-white-50">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Community</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Telegram</a></li>
+                        <li><a href="#" class="text-white-50">Twitter</a></li>
+                        <li><a href="#" class="text-white-50">Discord</a></li>
+                        <li><a href="#" class="text-white-50">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white-50">
+            <div class="text-center text-white-50">
+                <p>&copy; 2025 CryptoExchange. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details - CryptoExchange</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FFC107'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='%231a1a2e'%3EB%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FFC107'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='%231a1a2e'%3EB%3C/text%3E%3C/svg%3E">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-currency-bitcoin text-warning"></i> CryptoExchange
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active px-3" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="market.html">Market</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-3"><a class="btn btn-outline-light" href="login.html">Login</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-warning" href="register.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-3" id="serviceTitle">Crypto Trading Platform</h1>
+                    <p class="lead" id="serviceSubtitle">Advanced trading platform with comprehensive features</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="mb-4">Service Overview</h2>
+                    <p class="lead" id="serviceOverview">Our cryptocurrency trading platform provides a comprehensive solution for both beginners and professional traders. With advanced charting tools, multiple order types, and real-time market data, you can trade with confidence.</p>
+                    <p id="serviceDescription">Experience seamless trading across 200+ cryptocurrencies with lightning-fast execution and competitive fees. Our platform is designed with security and user experience in mind, ensuring your trading journey is both safe and efficient.</p>
+
+                    <!-- Key Features -->
+                    <h3 class="mt-5 mb-4">Key Features</h3>
+                    <div class="row g-3" id="keyFeatures">
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                <div>
+                                    <strong>Spot Trading</strong>
+                                    <p class="text-muted small mb-0">Buy and sell cryptocurrencies instantly at current market prices</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                <div>
+                                    <strong>Futures Trading</strong>
+                                    <p class="text-muted small mb-0">Trade cryptocurrency futures with up to 100x leverage</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                <div>
+                                    <strong>Advanced Charts</strong>
+                                    <p class="text-muted small mb-0">Professional trading charts with 50+ technical indicators</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                <div>
+                                    <strong>Mobile Apps</strong>
+                                    <p class="text-muted small mb-0">Trade on the go with our iOS and Android mobile applications</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Supported Blockchains -->
+                    <h3 class="mt-5 mb-4">Supported Blockchains</h3>
+                    <div class="row g-3" id="blockchains">
+                        <div class="col-md-4">
+                            <div class="border rounded p-3 text-center">
+                                <i class="bi bi-currency-bitcoin display-4 text-warning mb-2"></i>
+                                <h5>Bitcoin</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="border rounded p-3 text-center">
+                                <i class="bi bi-currency-ethereum display-4 text-primary mb-2"></i>
+                                <h5>Ethereum</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="border rounded p-3 text-center">
+                                <i class="bi bi-diagram-3 display-4 text-success mb-2"></i>
+                                <h5>Multi-Chain</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Security Standards -->
+                    <h3 class="mt-5 mb-4">Security Standards</h3>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded">
+                                <i class="bi bi-shield-check text-success me-2"></i>
+                                <strong>2FA Authentication</strong>
+                                <p class="text-muted small mb-0">Two-factor authentication for enhanced account security</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded">
+                                <i class="bi bi-lock text-primary me-2"></i>
+                                <strong>Cold Storage</strong>
+                                <p class="text-muted small mb-0">95% of funds stored in offline cold wallets</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded">
+                                <i class="bi bi-shield-lock text-warning me-2"></i>
+                                <strong>Insurance Coverage</strong>
+                                <p class="text-muted small mb-0">Comprehensive insurance protection for user funds</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded">
+                                <i class="bi bi-bug text-danger me-2"></i>
+                                <strong>Regular Audits</strong>
+                                <p class="text-muted small mb-0">Quarterly security audits by leading firms</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- User Benefits -->
+                    <h3 class="mt-5 mb-4">User Benefits</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="bi bi-arrow-right-circle text-primary me-2"></i> Low trading fees starting from 0.1%</li>
+                        <li class="mb-3"><i class="bi bi-arrow-right-circle text-primary me-2"></i> 24/7 customer support via live chat</li>
+                        <li class="mb-3"><i class="bi bi-arrow-right-circle text-primary me-2"></i> Instant deposits and withdrawals</li>
+                        <li class="mb-3"><i class="bi bi-arrow-right-circle text-primary me-2"></i> Educational resources and trading guides</li>
+                        <li class="mb-3"><i class="bi bi-arrow-right-circle text-primary me-2"></i> API access for algorithmic trading</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sticky-top" style="top: 100px;">
+                        <div class="pricing-card">
+                            <h4 class="mb-4">Pricing Plans</h4>
+                            
+                            <div class="mb-4">
+                                <h5>Free</h5>
+                                <div class="price-amount">$0</div>
+                                <ul class="list-unstyled mt-3">
+                                    <li><i class="bi bi-check text-success me-2"></i> Basic trading features</li>
+                                    <li><i class="bi bi-check text-success me-2"></i> 0.2% trading fee</li>
+                                    <li><i class="bi bi-check text-success me-2"></i> Email support</li>
+                                </ul>
+                            </div>
+
+                            <hr>
+
+                            <div class="mb-4">
+                                <h5>Pro</h5>
+                                <div class="price-amount">$29<span class="fs-6">/mo</span></div>
+                                <ul class="list-unstyled mt-3">
+                                    <li><i class="bi bi-check text-success me-2"></i> Advanced trading tools</li>
+                                    <li><i class="bi bi-check text-success me-2"></i> 0.1% trading fee</li>
+                                    <li><i class="bi bi-check text-success me-2"></i> Priority support</li>
+                                    <li><i class="bi bi-check text-success me-2"></i> API access</li>
+                                </ul>
+                            </div>
+
+                            <hr>
+
+                            <div class="mb-4">
+                                <h5>Enterprise</h5>
+                                <div class="price-amount">Custom</div>
+                                <ul class="list-unstyled mt-3">
+                                    <li><i class="bi bi-check text-success me-2"></i> All Pro features</li>
+                                    <li><i class="bi bi-check text-success me-2"></i> Custom fee structure</li>
+                                    <li><i class="bi bi-check text-success me-2"></i> Dedicated account manager</li>
+                                    <li><i class="bi bi-check text-success me-2"></i> White-label solutions</li>
+                                </ul>
+                            </div>
+
+                            <a href="wallet.html" class="btn btn-warning w-100 btn-lg">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How do I get started with trading?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Getting started is easy! Simply create an account, complete the KYC verification process, deposit funds, and you can start trading immediately. We offer comprehensive guides and tutorials to help you get started.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    What are the trading fees?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our trading fees start at 0.1% for makers and 0.2% for takers. Fees decrease based on your 30-day trading volume. Pro and Enterprise members enjoy additional fee discounts.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Is my money safe?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, security is our top priority. We use cold storage for 95% of funds, implement 2FA authentication, conduct regular security audits, and maintain comprehensive insurance coverage for user assets.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Which cryptocurrencies are supported?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We support 200+ cryptocurrencies including Bitcoin, Ethereum, and all major altcoins. New coins are regularly added based on community demand and security assessments.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Can I use the platform on mobile?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! We offer native iOS and Android mobile apps with full trading functionality. You can trade, deposit, withdraw, and manage your portfolio from anywhere.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-3">Ready to Get Started?</h2>
+            <p class="lead mb-4">Join millions of users trading on our secure platform</p>
+            <a href="wallet.html" class="btn btn-warning btn-lg px-5 me-3">Launch App</a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg px-5">Contact Sales</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5><i class="bi bi-currency-bitcoin text-warning"></i> CryptoExchange</h5>
+                    <p class="text-white-50">The most secure and user-friendly cryptocurrency exchange platform.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-telegram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-discord"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li><a href="services.html" class="text-white-50">Services</a></li>
+                        <li><a href="blog.html" class="text-white-50">Blog</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="text-white-50">Trading</a></li>
+                        <li><a href="services.html" class="text-white-50">Wallet</a></li>
+                        <li><a href="services.html" class="text-white-50">Staking</a></li>
+                        <li><a href="services.html" class="text-white-50">NFT Marketplace</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html" class="text-white-50">Help Center</a></li>
+                        <li><a href="contact.html" class="text-white-50">API Docs</a></li>
+                        <li><a href="token.html" class="text-white-50">Whitepaper</a></li>
+                        <li><a href="contact.html" class="text-white-50">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white-50">
+            <div class="text-center text-white-50">
+                <p>&copy; 2025 CryptoExchange. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Load service details based on URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const service = urlParams.get('service') || 'trading';
+        
+        const services = {
+            trading: {
+                title: 'Crypto Trading Platform',
+                subtitle: 'Advanced trading platform with comprehensive features',
+                overview: 'Our cryptocurrency trading platform provides a comprehensive solution for both beginners and professional traders.',
+                description: 'Experience seamless trading across 200+ cryptocurrencies with lightning-fast execution and competitive fees.'
+            },
+            wallet: {
+                title: 'Wallet Services',
+                subtitle: 'Secure multi-chain wallet solutions',
+                overview: 'Our wallet services provide secure storage for your cryptocurrencies across multiple blockchains.',
+                description: 'Choose from hot wallets for daily use or cold storage for maximum security. Support for Bitcoin, Ethereum, and 50+ other cryptocurrencies.'
+            }
+        };
+        
+        if (services[service]) {
+            document.getElementById('serviceTitle').textContent = services[service].title;
+            document.getElementById('serviceSubtitle').textContent = services[service].subtitle;
+            document.getElementById('serviceOverview').textContent = services[service].overview;
+            document.getElementById('serviceDescription').textContent = services[service].description;
+        }
+    </script>
+</body>
+</html>
+

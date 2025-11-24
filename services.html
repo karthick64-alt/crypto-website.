@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - CryptoExchange</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FFC107'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='%231a1a2e'%3EB%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23FFC107'/%3E%3Ctext x='50' y='70' font-size='60' font-weight='bold' text-anchor='middle' fill='%231a1a2e'%3EB%3C/text%3E%3C/svg%3E">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-currency-bitcoin text-warning"></i> CryptoExchange
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="index2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active px-3" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="market.html">Market</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-3"><a class="btn btn-outline-light" href="login.html">Login</a></li>
+                    <li class="nav-item ms-2"><a class="btn btn-warning" href="register.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-3">Our Services</h1>
+                    <p class="lead">Comprehensive cryptocurrency solutions for individuals and businesses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- View Toggle -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-end gap-2">
+                <button class="btn btn-outline-primary active" onclick="setView('grid')">
+                    <i class="bi bi-grid"></i> Grid
+                </button>
+                <button class="btn btn-outline-primary" onclick="setView('list')">
+                    <i class="bi bi-list"></i> List
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4" id="servicesContainer">
+                <!-- Crypto Trading Platform -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-arrow-left-right"></i>
+                        </div>
+                        <h4>Crypto Trading Platform</h4>
+                        <p>Advanced trading platform with spot, futures, and margin trading. Real-time charts, technical indicators, and order types.</p>
+                        <a href="service-details.html?service=trading" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Wallet Services -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-wallet2"></i>
+                        </div>
+                        <h4>Wallet Services</h4>
+                        <p>Multi-chain wallet support with hot and cold storage options. Secure, non-custodial wallets for Bitcoin, Ethereum, and more.</p>
+                        <a href="service-details.html?service=wallet" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Blockchain Development -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-diagram-3"></i>
+                        </div>
+                        <h4>Blockchain Development</h4>
+                        <p>Custom blockchain solutions, private networks, and enterprise blockchain implementation services.</p>
+                        <a href="service-details.html?service=blockchain" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Smart Contract Development -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-file-code"></i>
+                        </div>
+                        <h4>Smart Contract Development</h4>
+                        <p>Secure, audited smart contracts for DeFi, NFTs, DAOs, and custom blockchain applications.</p>
+                        <a href="service-details.html?service=smart-contracts" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Crypto Payment Gateway -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-credit-card"></i>
+                        </div>
+                        <h4>Crypto Payment Gateway</h4>
+                        <p>Accept cryptocurrency payments on your website. Easy integration with plugins for major e-commerce platforms.</p>
+                        <a href="service-details.html?service=payment" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Token Launchpad -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-rocket-takeoff"></i>
+                        </div>
+                        <h4>Token Launchpad</h4>
+                        <p>Launch your own cryptocurrency token with our comprehensive token launchpad service. Full support from creation to listing.</p>
+                        <a href="service-details.html?service=launchpad" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- NFT Marketplace -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-image"></i>
+                        </div>
+                        <h4>NFT Marketplace</h4>
+                        <p>Buy, sell, and trade NFTs across multiple blockchains. Low fees, verified collections, and royalty support.</p>
+                        <a href="service-details.html?service=nft" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Staking & Yield Farming -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-stack"></i>
+                        </div>
+                        <h4>Staking & Yield Farming</h4>
+                        <p>Earn passive income through staking and yield farming. Competitive APY rates on multiple cryptocurrencies.</p>
+                        <a href="service-details.html?service=staking" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Management -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <h4>Portfolio Management</h4>
+                        <p>Track and manage your cryptocurrency portfolio with advanced analytics, tax reporting, and performance insights.</p>
+                        <a href="service-details.html?service=portfolio" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Web3 Consulting -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-lightbulb"></i>
+                        </div>
+                        <h4>Web3 Consulting</h4>
+                        <p>Expert consulting services for Web3 projects, DeFi protocols, tokenomics design, and blockchain strategy.</p>
+                        <a href="service-details.html?service=consulting" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Crypto Lending & Borrowing -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-bank"></i>
+                        </div>
+                        <h4>Crypto Lending & Borrowing</h4>
+                        <p>Lend your crypto assets to earn interest or borrow against your holdings. Flexible terms and competitive rates for all users.</p>
+                        <a href="service-details.html?service=lending" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- API Integration Services -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <h4>API Integration Services</h4>
+                        <p>Seamless API integration for trading, market data, and wallet services. Comprehensive documentation and developer support.</p>
+                        <a href="service-details.html?service=api" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-3">Ready to Get Started?</h2>
+            <p class="lead mb-4">Contact us today to learn more about our services and how we can help your business.</p>
+            <a href="contact.html" class="btn btn-warning btn-lg px-5">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5><i class="bi bi-currency-bitcoin text-warning"></i> CryptoExchange</h5>
+                    <p class="text-white-50">The most secure and user-friendly cryptocurrency exchange platform.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-telegram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-discord"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li><a href="services.html" class="text-white-50">Services</a></li>
+                        <li><a href="blog.html" class="text-white-50">Blog</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="text-white-50">Trading</a></li>
+                        <li><a href="services.html" class="text-white-50">Wallet</a></li>
+                        <li><a href="services.html" class="text-white-50">Staking</a></li>
+                        <li><a href="services.html" class="text-white-50">NFT Marketplace</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html" class="text-white-50">Help Center</a></li>
+                        <li><a href="contact.html" class="text-white-50">API Docs</a></li>
+                        <li><a href="token.html" class="text-white-50">Whitepaper</a></li>
+                        <li><a href="contact.html" class="text-white-50">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white-50">
+            <div class="text-center text-white-50">
+                <p>&copy; 2025 CryptoExchange. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        function setView(view) {
+            const container = document.getElementById('servicesContainer');
+            const buttons = document.querySelectorAll('.btn-outline-primary');
+            const serviceItems = container.querySelectorAll('[class*="col-"]');
+            const serviceCards = container.querySelectorAll('.service-card');
+            
+            // Update button states
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            if (view === 'list') {
+                container.classList.add('list-view');
+                serviceItems.forEach(item => {
+                    // Remove all column classes
+                    item.className = item.className.replace(/col-\w+-\d+/g, '').trim();
+                    item.classList.add('col-12');
+                });
+                serviceCards.forEach(card => {
+                    card.classList.add('list-view-card');
+                });
+            } else {
+                // Grid view
+                container.classList.remove('list-view');
+                serviceItems.forEach(item => {
+                    // Remove all column classes and col-12
+                    item.className = item.className.replace(/col-\w+-\d+/g, '').trim();
+                    // Add back grid column classes
+                    item.classList.add('col-md-6', 'col-lg-4');
+                });
+                serviceCards.forEach(card => {
+                    card.classList.remove('list-view-card');
+                });
+            }
+        }
+    </script>
+</body>
+</html>
+
